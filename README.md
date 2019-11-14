@@ -29,8 +29,8 @@ To learn more about configuring Logback, read its [documentation](http://logback
 
 1. Configure your service to accept incoming connections (edit service.clj and add  ::http/host "0.0.0.0" )
 2. Build an uberjar of your service: `lein uberjar`
-3. Build a Docker image: `sudo docker build -t security-example-service .`
-4. Run your Docker image: `docker run -p 8080:8080 security-example-service`
+3. Build a Docker image: `sudo docker build -t security-signal-service .`
+4. Run your Docker image: `docker run -p 8080:8080 security-signal-service`
 
 ### [OSv](http://osv.io/) unikernel support with [Capstan](http://osv.io/capstan/)
 
@@ -38,7 +38,7 @@ To learn more about configuring Logback, read its [documentation](http://logback
 
 Once the image it built, it's cached.  To delete the image and build a new one:
 
-1. `capstan rmi security-example-service; capstan build`
+1. `capstan rmi security-signal-service; capstan build`
 
 
 ## Links

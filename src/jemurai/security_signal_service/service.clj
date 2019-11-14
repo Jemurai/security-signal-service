@@ -58,20 +58,13 @@
 
               ;; Root for resource interceptor that is available by default.
               ::http/resource-path "/public"
-
-              ;; Either :jetty, :immutant or :tomcat (see comments in project.clj)
-              ;;  This can also be your own chain provider/server-fn -- http://pedestal.io/reference/architecture-overview#_chain_provider
               ::http/type :jetty
               ;;::http/host "localhost"
               ::http/port 8000
-              ;; Options to pass to the container (Jetty)
               ::http/container-options {:h2c? true
                                         :h2? false
                                         ;:keystore "test/hp/keystore.jks"
                                         ;:key-password "password"
                                         ;:ssl-port 8443
                                         :ssl? false
-                                        ;; Alternatively, You can specify you're own Jetty HTTPConfiguration
-                                        ;; via the `:io.pedestal.http.jetty/http-configuration` container option.
-                                        ;:io.pedestal.http.jetty/http-configuration (org.eclipse.jetty.server.HttpConfiguration.)
                                         }})
