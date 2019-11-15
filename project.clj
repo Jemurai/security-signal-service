@@ -5,6 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [io.pedestal/pedestal.service "0.5.7"]
+;                 [io.pedestal/pedestal.jetty "0.5.1"]
                  [io.pedestal/pedestal.jetty "0.5.7"]
                  [ch.qos.logback/logback-classic "1.2.3" :exclusions [org.slf4j/slf4j-api]]
                  [org.slf4j/jul-to-slf4j "1.7.26"]
