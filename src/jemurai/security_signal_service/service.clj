@@ -1,6 +1,5 @@
 (ns jemurai.security-signal-service.service
   (:require [io.pedestal.http :as http]
-            [io.pedestal.http.route :as route]
             [io.pedestal.http.body-params :as body-params]
             [ring.util.response :as ring-resp]
             [clojure.tools.logging :as log]))
@@ -11,7 +10,8 @@
 
 (defn signal
   [request]
-  (log/error "Signal" request) ; Long run, log to DB, syslog, whatever.
+  ; Long run, log to DB, syslog, whatever.
+  (log/error "Signal" request) 
   (ring-resp/response (:params "ya" request)))
 
 (def common-interceptors [(body-params/body-params) http/html-body])
