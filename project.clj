@@ -12,7 +12,9 @@
                  [org.slf4j/jcl-over-slf4j "1.7.26"]
                  [org.slf4j/log4j-over-slf4j "1.7.26"]
                  [org.clojure/tools.logging "0.5.0"]
-                 [org.clojure/java.jdbc "0.7.10"]]
+                 [org.clojure/java.jdbc "0.7.10"]
+;                 [hiccup "1.0.5"]  ; This was used when we wanted to play with hiccup templating.
+                 ]
   :min-lein-version "2.0.0"
   :resource-paths ["config", "resources"]
   :plugins [[com.livingsocial/lein-dependency-check "1.1.3"]]
@@ -22,3 +24,5 @@
                    :dependencies [[io.pedestal/pedestal.service-tools "0.5.7"]]}
              :uberjar {:aot [jemurai.security-signal-service.server]}}
   :main ^{:skip-aot true} jemurai.security-signal-service.server)
+
+

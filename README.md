@@ -48,4 +48,4 @@ Once the image it built, it's cached.  To delete the image and build a new one:
 - If you change the version of jetty used in project.clj to the commented one and run `lein dependency-check` after setting that up, you will see interesting results.
 
 ## Links
-* [Other Pedestal examples](http://pedestal.io/samples)
+* Where this is the server collecting signal, the [Jemurai Security Library](https://github.com/jemurai/seclib-clj/) is the client or embedded code that produces the signal.

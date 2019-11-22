@@ -12,7 +12,7 @@
   [request]
   ; Long run, log to DB, syslog, whatever.
   (log/error "Signal" request) 
-  (ring-resp/response (:params "ya" request)))
+  (ring-resp/response "Thank you"))  ;(:params "ya" request)))
 
 (def common-interceptors [(body-params/body-params) http/html-body])
 
